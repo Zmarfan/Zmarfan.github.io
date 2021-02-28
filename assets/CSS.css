@@ -30,14 +30,22 @@ h2{
     text-align:center;
 }
 
+/*Header Picture animation*/
+
 .profilePicture {
     margin-bottom: 25px;
-    min-width:100px;
-    max-width:400px;
+    min-width: 100px;
+    max-width: 400px;
 }
 
 .logo{
     width:40px;
+    transition-property: width;
+    transition-duration:0.15s;
+}
+
+.logo:hover{
+    width:45px;
 }
 
 .main-body{
@@ -111,6 +119,10 @@ h2{
 
     .logo{
         width: 6em;
+    }
+
+    .logo:hover {
+        width: 6.5em;
     }
 
     .main-body{
