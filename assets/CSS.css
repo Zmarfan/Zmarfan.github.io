@@ -1,3 +1,7 @@
+a:hover{
+    color:#ccc;
+}
+
 body {
     background-color: rgb(245, 245, 245);
     color: #666;
@@ -19,11 +23,18 @@ h2{
     position: fixed;
     width: 30%;
     height: 100%;
-    padding: 80px 75px 50px 75px;
+    padding: 40px 75px 0px 75px;
     background: #222;
     background-image: url("headerPic.png");
     background-repeat:no-repeat;
     background-size: 100%;
+}
+
+.contact{
+    color: inherit;
+    text-decoration:inherit;
+    font-size:0.95em;
+    margin-top:25px;
 }
 
 .header p{
@@ -36,23 +47,29 @@ h2{
     margin-bottom: 25px;
     min-width: 100px;
     max-width: 400px;
-}
-
-.logo{
-    width:40px;
-    transition-property: width;
+    transition-property: transform;
     transition-duration:0.15s;
 }
 
-.logo:hover{
-    width:45px;
+    .profilePicture:hover {
+        transform: scale(1.05);
+    }
+
+.logo {
+    width: 40px;
+    transition-property: transform;
+    transition-duration: 0.15s;
 }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
 
 .main-body{
     text-align:center;
     float:right;
     width:70%;
-    padding:125px;
+    padding:125px 125px 0px 125px;
 }
 
 .main-body h1{
@@ -77,14 +94,67 @@ h2{
     text-align:left;
 }
 
-.projectItem{
-    box-sizing:border-box;
-    margin: 0px 15px 45px 15px;
+.noPadding{
+    padding:0px;
 }
 
-.projectImage{
-    width:100%;
-    margin-bottom:15px;
+.projectItem {
+    box-sizing: border-box;
+    margin: 0px 20px 40px 20px;
+}
+
+.projectItem p{
+    margin:0;
+}
+
+.projectItemImage {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px 20px 0px 20px;
+}
+
+    .projectItemImage:hover img {
+        transform: scale(1.025);
+    }
+
+    .projectItemImage:hover .projectOverlay {
+        opacity: 0.5;
+        transform: scale(1.025);
+    }
+
+.projectOverlay {
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+}
+
+
+.projectImage {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+.projectView {
+    color:white;
+    font-size:large;
+    border:solid;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 @media all and (max-width:992px)
@@ -103,6 +173,9 @@ h2{
     h4{
         font-size: 40px;
     }
+    .contact{
+        font-size: 27.5px;
+    }
 }
 
 @media all and (max-width:1300px), (max-aspect-ratio:16/9), (min-aspect-ratio:20/9)
@@ -119,10 +192,6 @@ h2{
 
     .logo{
         width: 6em;
-    }
-
-    .logo:hover {
-        width: 6.5em;
     }
 
     .main-body{
