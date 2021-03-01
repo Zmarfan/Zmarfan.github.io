@@ -118,6 +118,7 @@ h2{
         opacity:0;
     }
 
+
     .projectItemImage:hover .projectOverlay {
         opacity: 0.5;
         transform: scale(1.05);
