@@ -62,7 +62,7 @@ h2{
 }
 
     .logo:hover {
-        transform: scale(1.1);
+        transform: scale(1.15);
     }
 
 .main-body{
@@ -114,12 +114,13 @@ h2{
 }
 
     .projectItemImage:hover img {
-        transform: scale(1.025);
+        transform: scale(1.05);
+        opacity:0;
     }
 
     .projectItemImage:hover .projectOverlay {
         opacity: 0.5;
-        transform: scale(1.025);
+        transform: scale(1.05);
     }
 
 .projectOverlay {
@@ -141,7 +142,7 @@ h2{
     display: block;
     width: 100%;
     margin-bottom: 15px;
-    transition-property: transform;
+    transition-property: transform, opacity;
     transition-duration: 0.2s;
 }
 
@@ -178,7 +179,7 @@ h2{
     }
 }
 
-@media all and (max-width:1300px), (max-aspect-ratio:16/9), (min-aspect-ratio:20/9)
+@media all and (max-height:600px), (max-aspect-ratio:16/9)
 {
     .header {
         padding-top:45px;
