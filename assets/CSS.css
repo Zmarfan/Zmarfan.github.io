@@ -45,8 +45,8 @@ h2{
 
 .profilePicture {
     margin-bottom: 25px;
-    min-width: 100px;
-    max-width: 400px;
+    width: 100%;
+    max-width:400px;
     transition-property: transform;
     transition-duration:0.15s;
 }
@@ -135,7 +135,7 @@ h2{
     height: 100%;
     width: 100%;
     transition-property: opacity, transform;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 }
 
 
@@ -144,7 +144,7 @@ h2{
     width: 100%;
     margin-bottom: 15px;
     transition-property: transform, opacity;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 }
 
 .projectView {
