@@ -17,16 +17,16 @@ h2{
 }
 
 .header {
-    justify-content:center;
+    justify-content: center;
     color: white;
     text-align: center;
     position: fixed;
     width: 30%;
     height: 100%;
     padding: 40px 75px 0px 75px;
-    background: #222;
+    background: #064979;
     background-image: url("headerPic.png");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
