@@ -82,6 +82,16 @@ h2{
     margin-bottom:25px;
 }
 
+.inline-link {
+    color: #4b52a4;
+    text-decoration: inherit;
+}
+
+    .inline-link:hover {
+        color: rgb(130 141 197);
+    }
+
+
 #intro{
     margin-bottom:40px;
 }
