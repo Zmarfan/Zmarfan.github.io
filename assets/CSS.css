@@ -12,6 +12,11 @@ p {
     font-size: 1em;
 }
 
+em {
+    color: #0e5d93;
+    font-style: normal;
+}
+
 h2{
     font-size: 2em;
 }
